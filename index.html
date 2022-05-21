@@ -4,18 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Electricians</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;700;900&family=Ubuntu:ital,wght@0,300;0,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" media="screen">
+    <script src="https://kit.fontawesome.com/76677c1f2e.js" crossorigin="anonymous"></script>    <title>Electricians</title>
 </head>
 <body>
     <header>
         <div class="logo">
-            <img src="" alt="logo">
+            <img class="img-logo" src="https://svgsilh.com/svg_v2/295259.svg" alt="logo">
             <p class="logo-name">ELECTRICIAN</p>
             <p class="logo-slogan">WE ARE YOUR BEST OPTION</p>
         </div>
         <nav>
             <ul class="main-menu">
-                <li class="menu-item"><a href="">HOME</a></li>
+                <li class="menu-item"><a class="selected" href="">HOME</a></li>
                 <li class="menu-item"><a href="">ABOUT</a></li>
                 <li class="menu-item"><a href="">SERVICES</a></li>
                 <li class="menu-item"><a href="">PROJECTS</a></li>
@@ -28,34 +32,107 @@
     </header>
     <main>
         <section class="hero">
-            <h1 class="title">
-                ELECTRICIAN SERVICE <span class="text-resalt">PROVIDERS</span>
-            </h1>
-            <P class="detail">
-                We have the best professionals, they are very amable people,
-                if you want a service with all the quality ingredients you would choice us
-            </P>
+            <div class="hero-detail">
+                <h1 class="title">
+                    ELECTRICIAN SERVICE <span class="text-resalt">PROVIDERS</span>
+                </h1>
+                <P class="detail">
+                    We have the best professionals, they are very amable people,
+                    if you want a service with all the quality ingredients you would choice us
+                    Dolorum ipsa necessitatibus. Nostrum?
+                </P>
+                <button class="btn-primary">To know More</button>
+                <button class="btn-secondary">Sign in</button>
+            </div>
         </section>
         <section class="support">
-            <div class="card">
-                <img src="" alt="" class="logo-card">
-                <h2 class="subtitle"></h2>
-                <p class="card-detail"></p>
-                <button class="btn-card"></button>
-            </div>
-            <div class="card">
-                <img src="" alt="" class="logo-card">
-                <h2 class="subtitle"></h2>
-                <p class="card-detail"></p>
-                <button class="btn-card"></button>
-            </div>
-            <div class="card">
-                <img src="" alt="" class="logo-card">
-                <h2 class="subtitle"></h2>
-                <p class="card-detail"></p>
-                <button class="btn-card"></button>
+            <span class="text-resalt support-title">We are expert in</span>
+            <div class="cards-container">
+                <div class="card">
+                    <i class="fa-solid fa-plug desplegable"></i>
+                    <h2 class="subtitle">Installations</h2>
+                    <p class="card-detail">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus fugit sed provident eos. Obcaecati, omnis.</p>
+                    <button class="btn-primary">view more</button>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-heart-circle-bolt desplegable"></i>
+                    <h2 class="subtitle">Electrical Safety</h2>
+                    <p class="card-detail">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus harum alias fugiat, nemo eligendi tempore.</p>
+                    <button class="btn-primary">View more</button>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-lightbulb desplegable"></i>
+                    <h2 class="subtitle">Electrical Safety</h2>
+                    <p class="card-detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque vitae sapiente perspiciatis delectus,</p>
+                    <button class="btn-primary">View more</button>
+                </div>
             </div>
         </section>
+        <section class="our-projects">
+            <span class="text-resalt support-title">Great & Awesome builts</span>
+            <h2 class="title">OUR PROJECTS</h2>
+            <p class="our-projects-detail">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, et nobis? Sunt, voluptatem quisquam architecto, rem id dicta nobis ut assumenda debitis repellendus, quidem ipsam veritatis nostrum doloribus quasi.</p>
+            <ul class="menu-projects">
+                <li class="menu-project-item"><a class="selected-project" href="">ALL</a></li>
+                <li class="menu-project-item"><a href="">CLEAN</a></li>
+                <li class="menu-project-item"><a href="">PERSONAL PROJECTS</a></li>
+                <li class="menu-project-item"><a href="">MINIMALIST</a></li>
+                <li class="menu-project-item"><a href="">OTHER CHANGES</a></li>
+            </ul>
+            <div class="images-float">
+                <img src="https://images.pexels.com/photos/7359568/pexels-photo-7359568.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="electricist">
+                <img src="https://images.pexels.com/photos/5383806/pexels-photo-5383806.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="man with tool">
+                <img src="https://images.pexels.com/photos/909256/pexels-photo-909256.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="manual tools">
+            </div>
+        </section>
+        <section class="testimonials">
+            <div class="curtain"></div>
+                <div class="front-testimonial">
+                    <h2 class="subtitle">TESTIMONIALS</h2>
+                <h3 class="subtitle-autor">JHON SMITH</h3>
+                <h4 class="profesion">Chief Creator</h4>
+                <p class="testimonial">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, nobis excepturi, maxime mollitia aut eaque praesentium voluptate quaerat sit, placeat ad minus rerum! Tempora nobis inventore incidunt voluptatem nisi enim!
+                </p>
+            </div>
+        </section>
+        <section class="news">
+            <span class="text-resalt support-title">Label subjects</span>
+            <h2 class="title">
+                NEWS
+            </h2>
+            <p class="detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur optio nemo, facilis corrupti quo dolorem sequi, placeat non sed perspiciatis culpa unde ad nisi exercitationem minus ullam deserunt cumque earum?</p>
+            <div class="cards-container-news">
+                <div class="card">
+                    <figure class="img-container">
+                        <img src="https://images.pexels.com/photos/64609/pexels-photo-64609.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" class="logo-card">
+                        <p class="date">03 APR</p>
+                    </figure>                    
+                    <h2 class="subtitle">GALLERY POST</h2>
+                    <p class="card-detail">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus fugit sed provident eos. Obcaecati, omnis.</p>
+                    <button class="btn-primary">view more</button>
+                </div>
+                <div class="card">
+                    <figure class="img-container">
+                        <img src="https://images.pexels.com/photos/162540/career-firefighter-relaxing-job-162540.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" class="logo-card">
+                        <p class="date">03 APR</p>  
+                    </figure>
+                    <h2 class="subtitle">SOUND POST TYPE</h2>
+                    <p class="card-detail">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus fugit sed provident eos. Obcaecati, omnis.</p>
+                    <button class="btn-primary">view more</button>
+                </div>
+                <div class="card">
+                    <figure class="img-container">
+                        <img src="https://images.pexels.com/photos/448828/pexels-photo-448828.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" class="logo-card">
+                        <p class="date">03 APR</p>
+                    </figure>
+                    <h2 class="subtitle">VIDEO POST TYPE</h2>
+                    <p class="card-detail">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus fugit sed provident eos. Obcaecati, omnis.</p>
+                    <button class="btn-primary">view more</button>
+                </div>
+            </div>
+        </section>
+
     </main>
     <footer></footer>
 </body>

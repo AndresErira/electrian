@@ -1,0 +1,259 @@
+:root{
+    --logo-theme:#334166;
+    --gray:#7e8db3;
+    --yellow-primary:#e2bb2f;
+    --gray-light:#E6E6E3;
+    --white:#fff;
+    --float-img:200px;
+
+}
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    padding-top: 5px;
+    padding-bottom:5px ;
+    display: flex;
+}
+.logo{
+    width: 40%;
+    display: grid;
+    grid-template:"logo title"
+                "logo slogan";
+    align-items:center;
+    
+}
+.img-logo{
+    grid-area: logo;
+    width: 50px;
+    filter: invert(30%);
+    margin: 0;
+    justify-self: end;
+}
+.logo-name{
+    color: var(--logo-theme);
+    margin: 0;
+    grid-area: title;
+    font-weight: 700;
+}
+.logo-slogan{
+    margin: 0;
+    color: var(--gray);
+    font-size: 8px;
+    font-weight: 500;
+    grid-area: slogan;
+}
+
+.main-menu{
+display: flex;
+}
+.menu-item{
+    font-weight: 700;
+    font-size: 12px;
+    padding-left:20px;
+    list-style: none;
+    display: inline-block;
+}
+.menu-item a{
+    color: var(--gray);
+    text-decoration: none;
+}
+.menu-item a:hover{
+    color: var(--yellow-primary);
+}
+.selected{
+    color: var(--yellow-primary) !important;
+}
+.hero{
+    height: 100vh;
+    background-image: url(https://images.pexels.com/photos/442160/pexels-photo-442160.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-size: cover;
+}
+.hero-detail{
+    padding-left: 50%;
+    padding-top: 30vh;
+    width: 50%;
+}
+.title{
+    grid-area: title;
+    color: var(--logo-theme);
+}
+.text-resalt{
+    display: block;
+    color: var(--yellow-primary);
+}
+.detail{
+    color: var(--logo-theme);
+    font-size: small;
+    padding-right: 150px;
+    font-style: italic;
+}
+.btn-primary{
+    border: 1px solid var(--white);
+    background-color: var(--yellow-primary);
+    color: var(--white);
+    font-weight: 700;
+    padding: 6px;
+    cursor: pointer;
+    width: 150px;
+    margin-right: 10px;
+}
+.btn-primary:hover{
+ background-color: var(--logo-theme);
+ color: var(--gray-light);
+ border: 1px solid var(--yellow-primary);
+}
+.btn-secondary{
+    border: 1px solid var(--yellow-primary);
+    background-color: var(--white);
+    color: var(--yellow-primary);
+    font-weight: 700;
+    padding: 6px;
+    cursor: pointer;    
+    width: 150px;
+}
+.btn-secondary:hover{
+    background-color: var(--logo-theme);
+    color: var(--gray-light);
+    border: 1px solid var(--yellow-primary);
+}
+.support{
+    color: var(--logo-theme);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.cards-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+.support-title{
+    padding: 20px;
+    font-weight:bold;
+}
+.card{
+    text-align: center;
+    width: 20%;
+}
+.desplegable{
+    font-size: 40px;
+}
+.subtitle{
+    font-size: 20px;
+}
+.card-detail{
+    font-size: 10px;
+    line-height: 20px;
+}
+.our-projects{
+    position: relative;
+    color: var(--logo-theme);
+    padding-top: 10vh;
+    text-align: center;
+    padding-bottom: calc(var(--float-img)/2);
+}
+ .our-projects-detail{
+     display: block;
+     font-style: italic;
+     padding: 5px 40px;
+ }
+
+.menu-projects{
+    padding-top: 5vh;
+    display: flex;
+    justify-content:center;
+}
+.menu-project-item{
+    font-size: 15px;
+    padding: 10px;
+    list-style: none;
+}
+.menu-project-item a{
+    font-weight:500;
+    text-decoration: none;
+    color: var(--logo-theme);
+}
+.selected-project{
+    color: var(--white) !important;
+    border: 1px solid var(--yellow-primary);
+    background-color: #334166;
+    padding: 5px 15px;
+}
+.images-float{
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+.images-float img{
+    margin: 0;
+    padding: 0;
+    width:var(--float-img);
+    height: 200px;
+    object-fit: cover;
+}
+.testimonials{
+    position: relative;
+    padding-top: 20vh;
+    padding-bottom: 10vh;
+    text-align: center;
+    color: var(--white);
+    background-image: url(https://images.pexels.com/photos/162553/keys-workshop-mechanic-tools-162553.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-position: center;
+    background-size: cover;
+    height: 40vh;
+}
+.front-testimonial{
+    position: absolute;
+    z-index: 2;
+}
+.curtain{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 1;
+    backdrop-filter: brightness(100%);
+    background-color: rgba(122, 122, 122, 0.8);
+}
+.news{
+    text-align: center;
+}
+.cards-container-news{
+    display: flex;
+    justify-content: space-around;
+}
+.img-container{
+    position: relative;
+    width: 230px;
+    height: 150px;
+    margin: 0;
+    padding: 0;
+}
+.card img{
+    width: 230px;
+    height: 150px;
+    object-fit: cover;
+    
+}
+.news .detail{
+    padding-right: inherit;
+}
+.date{
+    color: var(--white);
+    background: var(--yellow-primary);
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    margin: 0;
+ 
+    
+}
+
+
