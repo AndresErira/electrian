@@ -11,6 +11,8 @@ body{
     margin: 0;
     font-family: 'Poppins', sans-serif;
 }
+/******************header*********************************************************/
+/******************header*********************************************************/
 header{
     padding-top: 5px;
     padding-bottom:5px ;
@@ -48,6 +50,9 @@ header{
 .main-menu{
 display: flex;
 }
+.menu-hidden{
+    display: none;
+}
 .menu-item{
     font-weight: 700;
     font-size: 12px;
@@ -65,6 +70,8 @@ display: flex;
 .selected{
     color: var(--yellow-primary) !important;
 }
+/******************hero*************************************/
+/******************hero*************************************/
 .hero{
     height: 100vh;
     background-image: url(https://images.pexels.com/photos/442160/pexels-photo-442160.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
@@ -118,6 +125,9 @@ display: flex;
     color: var(--gray-light);
     border: 1px solid var(--yellow-primary);
 }
+/******************suppport*************************************/
+/******************suppport*************************************/
+
 .support{
     color: var(--logo-theme);
    display: flex;
@@ -148,6 +158,8 @@ display: flex;
     font-size: 10px;
     line-height: 20px;
 }
+/******************our projects*************************************/
+/******************our projects*************************************/
 .our-projects{
     position: relative;
     color: var(--logo-theme);
@@ -195,6 +207,8 @@ display: flex;
     height: 200px;
     object-fit: cover;
 }
+/******************testimonials*************************************/
+/******************testimonials*************************************/
 .testimonials{
     position: relative;
     padding-top: 20vh;
@@ -219,6 +233,8 @@ display: flex;
     backdrop-filter: brightness(100%);
     background-color: rgba(122, 122, 122, 0.8);
 }
+/******************news*************************************/
+/******************news*************************************/
 .news{
     text-align: center;
     padding-bottom: 40px;
@@ -256,6 +272,8 @@ display: flex;
  
     
 }
+/******************footer*************************************/
+/******************footer*************************************/
 footer{
     display: flex;
     justify-content: space-around;
@@ -280,6 +298,7 @@ footer{
 }
 .our-services ul{
     padding: 0;
+    margin: 0;
 }
 .link-item{
     list-style: none;
@@ -297,7 +316,65 @@ footer{
     font-size: 12px;
 }
 
-
-
+@media (max-width:600px) {
+    header{
+        justify-content: space-around;
+    }
+    .main-menu{
+        display: none;
+    }
+    .menu-hidden{
+        padding-top: 10px;
+        display: inline-block;
+    }
+    .hero{
+        height: 60vh;
+        background-attachment: fixed;
+    }
+    .hero-detail{
+        padding-left: 10%;
+        padding-top: 11vh;
+        width: 90%;
+    }
+    .detail{
+        font-weight: 600;
+       
+    }
+    /***********************************support mobile***********************/
+    /***********************************support mobile***********************/
+    .cards-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .card{
+        width: 80%;
+        padding: 20px;
+    }
+    .menu-projects{
+        flex-wrap: wrap;
+    }
+    .images-float{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .images-float img{
+        width: 30%;
+        padding: 1%;
+        height: 130px;
+    }
+    .cards-container-news{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    /*
+    .cards-container-news{
+    display: flex;
+    justify-content: space-around;
+}
+    
+        
+    */
+}
 
 
